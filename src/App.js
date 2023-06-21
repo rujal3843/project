@@ -5,6 +5,7 @@ import { Sidebar } from './Component/Sidebar'
 import Navbar from './Component/Navbar'
 import { AnotherForm } from './Pages/AnotherForm'
 import Table from './Pages/Table'
+import Dashboard from './dashboard/Dashboard'
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
           {/* Rest of your application content */}
 
           <Routes>
+            <Route path='/' element={<Dashboard />} />
             <Route path='form' element={<AnotherForm />} />
             <Route path='table' element={<Table />} />
           </Routes>

@@ -25,19 +25,23 @@ export const Sidebar = () => {
     setOpen(open === value ? 0 : value);
   };
 
+  // const [navi,setNavi] = useState(true);
+
   return (
 
-   
-    
-    <div className="bg-[#0480FC] h-screen sticky top-0 ">
+   <>    
+    <div className={`  bg-[#04A405] h-screen sticky top-0` }>
       <div className="mb-2 p-4 flex items-center">
         <Typography variant="h5" color="white">
-      <p className="text-[40px] text-white">Innap</p>
+      <p className="text-[40px] text-white">
+      <NavLink to='/'>Innap </NavLink>
+        </p>
         </Typography>
-        <FaBars className="ml-16 text-white text-[50px]" />
+        <FaBars className="ml-16 text-black text-[40px]" 
+        />
       </div>
 
-      <div className="h-[calc(100vh-160px)] overflow-y-auto">
+      <div className="h-[calc(100vh-160px)] ">
 
 
       <List>
@@ -285,11 +289,12 @@ export const Sidebar = () => {
       </List>
       
 
+      </div>
       <footer className="text-white text-[12px] ml-5">Innap Hotel Admin <br />
       @2023 All Right Reserved
       </footer>
-      </div>
     
     </div>
+    </>
   );
 }
