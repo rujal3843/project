@@ -1,19 +1,19 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 
-import { Sidebar } from './Component/Sidebar'
 import Navbar from './Component/Navbar'
 import { AnotherForm } from './Pages/AnotherForm'
 import Table from './Pages/Table'
 import Dashboard from './dashboard/Dashboard'
 import Table1 from './Table/Table1'
+import Side from './Component/Side'
 
 const App = () => {
   return (
     <>
 
       <div className="flex">
-        <Sidebar />
+        <Side />
         <div className="flex flex-col w-full ">
           <Navbar />
           {/* Rest of your application content */}

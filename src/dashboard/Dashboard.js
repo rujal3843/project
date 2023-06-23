@@ -11,6 +11,7 @@ import { LineCharts } from '../Component/Chart/LineCharts'
 const Dashboard = () => {
   return (
     <>
+    <div>
       <div className='grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-1 gap-5 ml-5 p-10'>
 
         <div className="text-white bg-blue-500 p-4 flex items-center justify-between  rounded-xl gap-10">
@@ -43,6 +44,7 @@ const Dashboard = () => {
             <p className="text-sm">New Booking</p>
           </div>
           <BsBoxArrowInLeft className="text-4xl" />
+        </div>
         </div>
 
 
