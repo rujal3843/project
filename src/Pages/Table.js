@@ -36,7 +36,7 @@ const rows = [
 
 const Table = () => {
   return (
-    <div className="h-96 w-full">
+    <div className="h-96 w-full mt-10">
       <DataGrid
         rows={rows}
         columns={columns}

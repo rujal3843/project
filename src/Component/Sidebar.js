@@ -2,19 +2,8 @@ import React from "react";
 import { FaBars } from 'react-icons/fa'
 import { MdDashboard } from 'react-icons/md'
 
-import {
-  Typography,
-  List,
-  ListItem,
-  ListItemPrefix,
-  Accordion,
-  AccordionHeader,
-  AccordionBody,
-} from "@material-tailwind/react";
-import {
-  PresentationChartBarIcon,
-  ShoppingBagIcon,
-} from "@heroicons/react/24/solid";
+import {Typography, List, ListItem, ListItemPrefix, Accordion, AccordionHeader, AccordionBody,} from "@material-tailwind/react";
+import { PresentationChartBarIcon,ShoppingBagIcon,} from "@heroicons/react/24/solid";
 import { ChevronRightIcon, ChevronDownIcon } from "@heroicons/react/24/outline";
 import { NavLink } from "react-router-dom";
 
@@ -25,20 +14,20 @@ export const Sidebar = () => {
     setOpen(open === value ? 0 : value);
   };
 
-  // const [navi,setNavi] = useState(true);
+
+
 
   return (
 
    <>    
-    <div className={`  bg-[#04A405] h-screen sticky top-0` }>
+    <div className={`bg-[#04A405] h-screen sticky top-0 ` }>
       <div className="mb-2 p-4 flex items-center">
         <Typography variant="h5" color="white">
       <p className="text-[40px] text-white">
       <NavLink to='/'>Innap </NavLink>
         </p>
         </Typography>
-        <FaBars className="ml-16 text-black text-[40px]" 
-        />
+        <FaBars className="ml-16 text-black text-[40px]"  />
       </div>
 
       <div className="h-[calc(100vh-160px)] ">
@@ -197,7 +186,7 @@ export const Sidebar = () => {
                 <ListItemPrefix>
                   <ChevronRightIcon strokeWidth={3} className="h-3 w-5" />
                 </ListItemPrefix>
-                Achieved task
+                <NavLink to='/crud'>CRUD</NavLink>
               </ListItem>
             </List>
           </AccordionBody>
